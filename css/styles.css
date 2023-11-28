@@ -1,0 +1,134 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+#header {
+    background-color: #4B527E;
+}
+.menu .menuLista {
+list-style-type: none;
+text-align: center;
+}
+.menuLista li {
+    display: inline;
+    margin-right: 20px;
+
+}
+.menuLista li a {
+    font-weight: bold;
+    color: #2E4374;
+    text-decoration: none;
+    font-size: 20px; 
+}
+#header .menuRedes {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 20px 30px;
+}
+.menuRedes a {
+    font-weight: bold;
+    color: #2E4374;
+    text-decoration: none;
+}
+main {
+    position: relative;
+    background-image: url(../img/portada_principal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.container {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #2E4374;
+}
+.container h1, p {
+    font-size: 50px;
+    color: #2E4374;
+    font-family: 'Roboto Condensed', sans-serif;   
+}
+.pilares {
+    background-color: #7C81AD;
+}
+.pilares h2 {
+    color: #E5C3A6;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding:20px;  
+}
+.pilares img {
+    width: 100px;
+    height: auto;
+}
+.pilares h3 {
+    color: #E5C3A6;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.footer {
+    background-color:#E5C3A6;
+    padding: 5px 0;
+}
+.footer .logo {
+    text-align: left;
+}
+.footer p {
+    text-align: left;
+    font-size: 20px;
+}
+.footer .menuRedes {
+    text-align: right;
+    font-size: 30px;
+}
+.detalle-contenido h2 {
+    color: #E5C3A6;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding:20px;
+}
+.detalle-contenido p {
+    color: #2E4374;
+    font-size: 20px;
+}
+.etica h2{
+    font-size: 30px;
+    color: #2E4374;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 20px;
+}
+.etica p{
+    font-size: 15px;
+    color: #7C81AD;
+    font-family: 'Roboto Condensed', sans-serif
+}
+.detalle-contenido h3 {
+    color: #E5C3A6;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding:20px
+}
+label, input, textarea, select {
+    display: block;
+    margin-bottom: 30px;
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
