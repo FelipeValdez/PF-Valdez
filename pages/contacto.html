@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarCap</title>
-    <link rel="stylesheet" href="../css/styles.css">
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header id="header">    
-        <div class="logo">
-            <a href="../index.html"><img src="../img/logo_starcap_acomodad.png" alt="logo_empresa"></a> 
-        </div>
-        <nav class="menu">
-            <ul class="menuLista">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./casos_de_exito.html">CASOS DE ÉXITO</a></li>
-                <li><a href="./equipo.html">EQUIPO</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg" style="background-color: #4B527E;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../img/logo_starcap_acomodad.png" alt="el logo de la empresa">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./casos_de_exito.html">CASOS DE ÉXITO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./equipo.html">EQUIPO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <div class="menuRedes">
+          <div class="menuRedes">
             <a href="https://www.facebook.com/"target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/"target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.gmail.com/"target="_blank">consultorastarcap@gmail.com</a>
-           
-        </div>
+          </div>
     </header>
     <main id="pages">
         <div class="container">
@@ -66,19 +84,26 @@
     </section>
     <footer class="footer">
         <div class="logo">
-            <a href="../index.html"><img src="../img/logo_starcap_acomodad.png" alt="logo_empresa"></a> 
+            <a href="../index.html">
+            <img src="../img/logo_starcap_acomodad.png" alt="logo_empresa">
+            </a>
         </div>
-        <div>    
-            <p>&copy Copyright. Derechos de autor reservados</p>
-            <p>Dirección:</p>
-            <p>Télefono:</p>
+        <div class="otros-datos">
+            <h4>SOBRE NOSOTROS</h4>
+            <p>Dirección: 9 de Julio 643, Tandil, Buenos Aires, Argentina- CP:7000</p>
+            <p>Télefono: 2314784512 </p>
             <p>Mail: <a href="https://www.gmail.com/"target="_blank">consultorastarcap@gmail.com</a> </p>
+            <p>&copy Copyright. Derechos de autor reservados</p>
         </div>
-        <div class="menuRedes">
+        <div class="menu-redes">
+            <h4>SEGUINOS</h4>
             <a href="https://www.facebook.com/"target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/"target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
-    </footer>
+    </footer>    
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
