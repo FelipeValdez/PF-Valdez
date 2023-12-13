@@ -196,7 +196,7 @@ main .contenedor p {
   width: 100%;
   height: auto;
   border: transparent solid 2px;
-  border-radius: 9px;
+  border-radius: 100px;
 }
 .pilares .pilares-item h3 {
   margin-top: 30px;
@@ -204,6 +204,11 @@ main .contenedor p {
   font-size: 1.5em;
   font-style: italic;
   color: #2E4374;
+  font-weight: bold;
+}
+.pilares .pilares-item p {
+  margin: 20px;
+  font-weight: bold;
 }
 
 /* OTRAS PAGES */
@@ -292,12 +297,28 @@ main .contenedor p {
 }
 .empresas .empresas-item .empresa-img {
   flex: 0 0 auto;
+  position: relative;
+}
+.empresas .empresas-item .empresa-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #7C81AD, transparent);
+  opacity: 0.9;
 }
 .empresas .empresas-item .empresa-img img {
-  width: 200px;
+  margin: 10px;
+  width: 150px;
   height: auto;
   border: transparent solid 2px;
-  border-radius: 9px;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+.empresas .empresas-item .empresa-img:hover img {
+  transform: scale(1.05);
 }
 .empresas .empresas-item .empresa-texto {
   flex: 1;
@@ -352,6 +373,10 @@ main .contenedor p {
   width: 100%;
   border-radius: 3px;
   border: 4px solid #2E4374;
+  transition: transform 0.3s ease;
+}
+.equipo .equipo-item:hover img {
+  transform: scale(1.05);
 }
 .equipo .equipo-item h3 {
   margin-top: 15px;
@@ -379,7 +404,7 @@ main .contenedor p {
 
 /* PAGE CONTACTO */
 .formulario {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
   display: grid;
   gap: 30px;
@@ -393,10 +418,11 @@ main .contenedor p {
   width: auto;
 }
 .formulario .formulario-item label {
-  font-size: 1.2em;
+  font-size: 2em;
   margin-bottom: 8px;
   color: #E5C3A6;
   font-weight: bold;
+  font-size: 1.3em;
 }
 .formulario .formulario-item input, .formulario .formulario-item textarea, .formulario .formulario-item select {
   padding: 10px;
@@ -405,6 +431,12 @@ main .contenedor p {
   font-size: 1em;
   margin-bottom: 15px;
   box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.formulario .formulario-item input:focus, .formulario .formulario-item textarea:focus, .formulario .formulario-item select:focus {
+  background-color: #7C81AD;
+  font-weight: bold;
+  color: #E5C3A6;
 }
 .formulario .formulario-item-msj {
   grid-column: 1/3;
@@ -412,10 +444,11 @@ main .contenedor p {
   margin-right: 30px;
 }
 .formulario .formulario-item-msj label {
-  font-size: 1.2em;
+  font-size: 2em;
   margin-bottom: 8px;
   color: #E5C3A6;
   font-weight: bold;
+  font-size: 1.3em;
 }
 .formulario .formulario-item-msj #mensaje {
   width: 100%;
@@ -425,6 +458,14 @@ main .contenedor p {
   font-size: 1em;
   margin-bottom: 15px;
   box-sizing: border-box;
+}
+.formulario .formulario-item-msj textarea {
+  transition: all 0.3s ease;
+}
+.formulario .formulario-item-msj textarea:focus {
+  background-color: #7C81AD;
+  font-weight: bold;
+  color: #E5C3A6;
 }
 .formulario .boton {
   display: flex;
@@ -439,7 +480,8 @@ main .contenedor p {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 /* MEDIA QUERIES */
@@ -490,8 +532,14 @@ main .contenedor p {
   .formulario {
     grid-template-columns: 1fr;
   }
+  .formulario .formulario-item label {
+    font-size: 1em;
+  }
   .formulario .formulario-item-msj {
     grid-column: 1/2;
+  }
+  .formulario .formulario-item-msj label {
+    font-size: 1em;
   }
   .formulario .boton {
     grid-column: 1/2;
