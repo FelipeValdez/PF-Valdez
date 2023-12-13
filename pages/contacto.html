@@ -49,39 +49,61 @@
             <a href="https://www.instagram.com/"target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
-    </header>
-    <main id="pages">
-        <div class="container">
-            <h1>CONTÁCTANOS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Consequatur rerum vero doloribus eveniet suscipit possimus natus consectetur deserunt at blanditiis?</p>
+    </header>      
+    <main>
+        <div id="imagen-pcipal"><img src="../img/portada_principal.jpg" alt="portada principal">
         </div>
-    </main>
-    <section class="formulario">
-        <form action=""method="">
-            <label for="nombre"></label>
-            <input type="text" id="nombre" placeholder="Nombre y Apellido">
-            <label for="correo"></label>
-            <input type="email" id="correo" placeholder="Correo electrónico">
-            <label for="empresa"></label>
-            <input type="text" id="empresa" placeholder="Empresa">
-            <label for="telefono"></label>
-            <input type="number" id="telefono" placeholder="Nro de télefono">
-            <label for="pais">Elegir país</label>
-            <select name="pais" id="pais">
-                <option value="01">Argentina</option>
-                <option value="02">Uruguay</option>
-                <option value="03">Chile</option>
-                <option value="04">Paraguay</option>
-            </select>
-            <label for="ciudad"></label>
-            <input type="text" id="ciudad" placeholder="Ciudad">
-            <label for="mensaje"></label>
-            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
-            <input type="submit" value="Enviar">
-
-        </form>
+    </main> 
+    <div class="titulo-sec">
+        <h1>CONTACTO</h1>
+        <p>Envianos tu consulta y nos contactaremos a la brevedad.
+        </p>
+    </div>
+    <section>
+      <form class="formulario" action="" method="">
+        <div class="formulario-item">
+          <label for="nombre">Nombre y Apellido:</label>
+          <input type="text" id="nombre" placeholder="Nombre y Apellido">
+        </div>
+    
+        <div class="formulario-item">
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" placeholder="Correo electrónico">
+        </div>
+    
+        <div class="formulario-item">
+          <label for="empresa">Empresa:</label>
+          <input type="text" id="empresa" placeholder="Empresa">
+        </div>
+    
+        <div class="formulario-item">
+          <label for="telefono">Nro de teléfono:</label>
+          <input type="number" id="telefono" placeholder="Nro de teléfono">
+        </div>
+    
+        <div class="formulario-item">
+          <label for="pais">País:</label>
+          <select name="pais" id="pais">
+            <option value="01">Argentina</option>
+            <option value="02">Uruguay</option>
+            <option value="03">Chile</option>
+            <option value="04">Paraguay</option>
+          </select>
+        </div>
+        <div class="formulario-item">
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" id="ciudad" placeholder="Ciudad">
+        </div>
+        <div class="formulario-item-msj">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+        <div class="boton">
+          <input type="submit" value="Enviar">
+      </div>
+      </form>
     </section>
+
     <footer class="footer">
         <div class="logo">
             <a href="../index.html">

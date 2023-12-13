@@ -232,10 +232,14 @@ main .contenedor p {
 }
 
 /* PAGE SERVICIO */
+.container {
+  gap: 10px;
+}
+
 .row .col {
   text-align: left;
-  gap: 10px;
-  padding: 20px;
+  gap: 20px;
+  padding: 30px;
   margin-top: 20px;
 }
 .row .col:hover {
@@ -375,6 +379,71 @@ main .contenedor p {
   border-radius: 2px;
 }
 
+/* PAGE CONTACTO */
+.formulario {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.formulario .formulario-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: auto;
+}
+.formulario .formulario-item label {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #E5C3A6;
+  font-weight: bold;
+}
+.formulario .formulario-item input, .formulario .formulario-item textarea, .formulario .formulario-item select {
+  padding: 10px;
+  border: 2px solid #1a214e;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.formulario .formulario-item-msj {
+  grid-column: 1/3;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.formulario .formulario-item-msj label {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #E5C3A6;
+  font-weight: bold;
+}
+.formulario .formulario-item-msj #mensaje {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #1a214e;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.formulario .boton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  grid-column: 1/3;
+}
+.formulario .boton input {
+  padding: 12px;
+  background-color: #1a214e;
+  color: #E5C3A6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 990px) {
   #header .menuRedes {
@@ -386,8 +455,17 @@ main .contenedor p {
   }
 }
 @media (max-width: 768px) {
-  .contenedor h1 {
+  main .contenedor h1 {
     font-size: 2em;
+  }
+  main .contenedor p {
+    font-size: 1.3em;
+  }
+  .titulo-sec h1 {
+    font-size: 2em;
+  }
+  .titulo-sec p {
+    font-size: 1.3em;
   }
   .empresas .empresas-item {
     display: block;
@@ -397,9 +475,6 @@ main .contenedor p {
   }
   .etica {
     display: block;
-  }
-  .contenedor p {
-    font-size: 1.3em;
   }
   .pilares .pilares-item p {
     font-size: 0.9em;
@@ -413,6 +488,15 @@ main .contenedor p {
   .pilares {
     gap: 0;
     padding: 0;
+  }
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+  .formulario .formulario-item-msj {
+    grid-column: 1/2;
+  }
+  .formulario .boton {
+    grid-column: 1/2;
   }
 }
 @media (max-width: 800px) {
