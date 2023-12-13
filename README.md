@@ -2,9 +2,11 @@
 
 **Consultora StarCap**
 
-Posee un index, más 4 pages html
+**Contiene:** 
 
-Una carpeta css
+_Un index htmil, más 4 pages html_
 
-Una carpeta img
+_Una carpeta css_
+
+_Una carpeta img_
 
