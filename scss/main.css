@@ -48,7 +48,6 @@
 /* Apartado FOOTER */
 .footer {
   display: grid;
-  margin-top: 100px;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
   border-top: 7px solid #1a214e;
@@ -237,10 +236,6 @@ main .contenedor p {
 }
 
 /* PAGE SERVICIO */
-.container {
-  gap: 10px;
-}
-
 .row .col {
   text-align: left;
   gap: 20px;
@@ -250,6 +245,7 @@ main .contenedor p {
 .row .col:hover {
   background-color: #7C81AD;
   border-radius: 9px;
+  width: 300px;
 }
 .row .col h2 {
   color: #2E4374;

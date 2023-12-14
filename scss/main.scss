@@ -130,9 +130,6 @@ main {
     }
 }
 /* PAGE SERVICIO */
-.container {
-    gap: 10px;
-}
 .row .col {
     text-align: left;
     gap: 20px;
@@ -140,7 +137,8 @@ main {
     margin-top: 20px;
     &:hover {
     background-color: $color-fondo1;
-    border-radius: 9px;      
+    border-radius: 9px;    
+    width: 300px;
     }
     h2 {
         color: $color-letras1;
