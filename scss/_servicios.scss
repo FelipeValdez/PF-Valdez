@@ -1,0 +1,34 @@
+/* Página servicios */
+
+/* PAGE SERVICIO */
+
+.row .col {
+    text-align: left;
+    gap: 20px;
+    padding: 30px;
+    margin-top: 20px;
+    &:hover {
+    background-color: $color-fondo1;
+    border-radius: 9px;    
+    width: 300px;
+    }
+    h2 {
+        color: $color-letras1;
+        font-family: 'Nunito Sans';
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        background-color: $color-fondo1;
+        display: inline-block;
+        border: 2px solid $color-letras1;
+        border-radius: 9px;
+        padding: 20px;
+    }
+    p {
+        padding: 3px;
+        color: $color-letras;
+        font-weight: bold;
+    }
+}

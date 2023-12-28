@@ -1,0 +1,72 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 990px) {
+    #header .menuRedes {
+      display: none;
+    }
+    .navbar ul {
+      padding-top: 15px;
+      gap: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    main .contenedor h1 {
+      font-size: $f-med1;
+    }
+    main .contenedor p {
+        font-size: $f-med3;
+    }
+    .titulo-sec h1 {
+        font-size: $f-med1;
+    }
+    .titulo-sec p {
+        font-size: $f-med3;
+    }
+    .empresas .empresas-item {
+      display: block;
+      .empresa-texto p {
+        text-align: center;
+      }
+    }
+    .etica {
+        display: block;
+    }
+    .pilares .pilares-item p {
+      font-size: $f-chi1;
+    }
+    .pilares .pilares-item h3 {
+      font-size: $f-chi;
+    }
+    .estrategia h2 {
+      font-size: $f-med2;
+    }
+    .pilares {
+      gap: 0;
+      padding: 0;
+    }
+    .formulario{
+        grid-template-columns: 1fr;
+        .formulario-item label {
+            font-size: $f-chi;
+        }
+        .formulario-item-msj {
+            grid-column: 1/2;
+            label {
+                font-size: $f-chi;
+            }
+        }
+        .boton {
+            grid-column: 1/2;
+        }
+    }
+  }
+  @media (max-width: 800px) {
+    .footer,
+    .footer .otros-datos p {
+      grid-template-columns: 1fr;
+      font-size: $f-chi;
+    }
+    .footer h4 {
+      font-size: $f-med2;
+    }
+  }

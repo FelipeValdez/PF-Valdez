@@ -45,65 +45,7 @@
   font-weight: bold;
 }
 
-/* Apartado FOOTER */
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
-  border-top: 7px solid #1a214e;
-  width: 100%;
-  margin: auto;
-  padding-top: 50px;
-  gap: 40px;
-  background-color: #1a214e;
-}
-.footer .logo {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Nunito Sans";
-}
-.footer .logo img {
-  width: 150px;
-}
-.footer .otros-datos {
-  color: #E5C3A6;
-  font-size: 1em;
-  font-family: "Nunito Sans";
-  font-weight: bold;
-  text-align: center;
-}
-.footer .otros-datos a {
-  text-decoration: none;
-  color: #E5C3A6;
-}
-.footer .menu-redes {
-  text-align: center;
-}
-.footer .menu-redes a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  color: #E5C3A6;
-  line-height: 45px;
-  margin-right: 10px;
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 10px;
-}
-.footer h4 {
-  color: #E5C3A6;
-  font-size: 1.5em;
-  font-weight: bold;
-  font-family: "Nunito Sans";
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Cuerpo sitio web */
+/* Cuerpo sitio web de todas las páginas*/
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: #4B527E;
@@ -147,7 +89,31 @@ main .contenedor p {
   margin-top: 30px;
 }
 
-/* PAGE INICIO */
+.titulo-sec {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  color: #2E4374;
+}
+.titulo-sec h1 {
+  color: #E5C3A6;
+  font-weight: bold;
+  font-size: 4em;
+  font-family: "Nunito Sans";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #E5C3A6;
+  padding: 20px;
+}
+.titulo-sec p {
+  color: #E5C3A6;
+  font-size: 2em;
+  font-family: "Nunito Sans";
+  margin-top: 30px;
+}
+
+/* Página de inicio */
 .estrategia {
   display: flex;
   justify-content: center;
@@ -210,31 +176,7 @@ main .contenedor p {
   font-weight: bold;
 }
 
-/* OTRAS PAGES */
-.titulo-sec {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  color: #2E4374;
-}
-.titulo-sec h1 {
-  color: #E5C3A6;
-  font-weight: bold;
-  font-size: 4em;
-  font-family: "Nunito Sans";
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #E5C3A6;
-  padding: 20px;
-}
-.titulo-sec p {
-  color: #E5C3A6;
-  font-size: 2em;
-  font-family: "Nunito Sans";
-  margin-top: 30px;
-}
-
+/* Página servicios */
 /* PAGE SERVICIO */
 .row .col {
   text-align: left;
@@ -267,7 +209,7 @@ main .contenedor p {
   font-weight: bold;
 }
 
-/* PAGE CASOS DE ÉXITO */
+/* Página casos de éxito */
 .empresas {
   display: flex;
   justify-content: center;
@@ -324,7 +266,7 @@ main .contenedor p {
   text-align: left;
 }
 
-/* PAGE EQUIPO */
+/* Página equipo */
 .etica {
   display: flex;
   justify-content: center;
@@ -398,7 +340,7 @@ main .contenedor p {
   border-radius: 2px;
 }
 
-/* PAGE CONTACTO */
+/* Página contacto */
 .formulario {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -478,6 +420,64 @@ main .contenedor p {
   cursor: pointer;
   font-size: 1.3em;
   font-weight: bold;
+}
+
+/* Apartado FOOTER */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  border-top: 7px solid #1a214e;
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+  gap: 40px;
+  background-color: #1a214e;
+}
+.footer .logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito Sans";
+}
+.footer .logo img {
+  width: 150px;
+}
+.footer .otros-datos {
+  color: #E5C3A6;
+  font-size: 1em;
+  font-family: "Nunito Sans";
+  font-weight: bold;
+  text-align: center;
+}
+.footer .otros-datos a {
+  text-decoration: none;
+  color: #E5C3A6;
+}
+.footer .menu-redes {
+  text-align: center;
+}
+.footer .menu-redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  color: #E5C3A6;
+  line-height: 45px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+.footer h4 {
+  color: #E5C3A6;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Nunito Sans";
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* MEDIA QUERIES */

@@ -1,0 +1,66 @@
+/* Cuerpo sitio web de todas las páginas*/
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color:$color-fondo;
+}
+main {
+    background-color:$color-fondo;
+    #imagen-pcipal {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            filter: brightness(70%) sepia(20%);
+        }
+    }
+    .contenedor {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        color: $color-letras1;
+        h1 {
+            color: $color-letras;
+            font-weight: bold;
+            font-size: $f-grande;
+            font-family: 'Nunito Sans';
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid $color-letras;
+            padding: 20px;
+        }
+        p {
+            color: $color-letras;
+            font-size: $f-med1;
+            font-family: 'Nunito Sans';
+            margin-top: 30px;
+        }
+    }
+}
+.titulo-sec {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    color: $color-letras1;
+    h1 {
+        color: $color-letras;
+        font-weight: bold;
+        font-size: $f-grande;
+        font-family: 'Nunito Sans';
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        border-bottom: 2px solid $color-letras;
+        padding: 20px;
+    }
+    p {
+        color: $color-letras;
+        font-size: $f-med1;
+        font-family: 'Nunito Sans';
+        margin-top: 30px;
+    }
+}
